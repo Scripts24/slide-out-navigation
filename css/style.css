@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
+@font-face {
+    font-family: 'Monument Extended';
+    src        : url(/fonts/MonumentExtended/MonumentExtended-Regular.otf);
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap; /* Otras opciones son 'fallback' o 'optional' */
+}
+
+
 * {
     margin         : 0;
     padding        : 0;
     box-sizing     : border-box;
     text-decoration: none;
-    font-family    : 'Lato', sans-serif;
+    font-family    : 'Monument Extended', sans-serif;
+    font-weight    : lighter;
 }
 
 body {
@@ -24,7 +34,7 @@ body {
     position       : fixed;
     width          : 6%;
     height         : 100vh;
-    background     : #54592C;
+    background     : #DDC76C;
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -62,7 +72,7 @@ body {
 .nav-item a {
     position      : relative;
     top           : 140px;
-    color         : #54592C;
+    color         : #DDC76C;
     text-transform: uppercase;
     font-size     : 140px;
     font-weight   : lighter;
@@ -73,7 +83,7 @@ body {
 .nav-item-wrapper::after {
     content   : "";
     position  : absolute;
-    top       : 140px;
+    top       : 128px;
     left      : 0;
     width     : 110%;
     height    : 100%;
@@ -113,11 +123,11 @@ body {
     }
 
     .nav-items {
-        margin: 30px;
+        margin: 20px;
     }
 
     .nav-item a {
-        font-size     : 40px;
+        font-size     : 60px;
         letter-spacing: 0;
     }
 
@@ -125,4 +135,15 @@ body {
         display: none;
     }
 
+}
+
+@media (max-width:550px) {
+    .nav-items {
+        margin: 10px;
+    }
+
+    .nav-item a {
+        font-size     : 40px;
+        letter-spacing: 0;
+    }
 }
