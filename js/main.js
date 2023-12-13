@@ -1,5 +1,5 @@
 TweenMax.from('.navbar', 2, {
-    left: '20%',
+    left: '-20%',
     ease: Expo.easeInOut,
     delay: 0.4,
 })
